@@ -1,0 +1,19 @@
+/* 1. Altera a direção do conteúdo para linha (lado a lado) e ajusta a largura */
+article {
+  display: flex; /* Garante o comportamento Flexbox */
+  flex-direction: row; /* Exibe imagem, título e texto em linha */
+  flex: 1 1 100%; /* Faz o card ocupar 100% da largura disponível */
+  width: 100%; /* Reforça a largura total da página */
+}
+
+/* 2. Exemplo de uso do align-self em um elemento interno (ex: o botão) */
+article button {
+  align-self: flex-end; /* Quebra o alinhamento centralizado, alinhando o botão ao final/base */
+}
+
+/* Caso queira aplicar na imagem em vez do botão, basta usar o seletor abaixo: */
+/*
+article img {
+  align-self: flex-start; /* Alinha a imagem no topo/início
+}
+*/
